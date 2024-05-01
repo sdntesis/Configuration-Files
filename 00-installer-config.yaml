@@ -1,0 +1,25 @@
+  
+
+
+
+
+
+
+# This is the network config written by 'subiquity'
+network:
+  version: 2
+  ethernets:
+    ens32:
+      addresses: 
+        - 192.168.222.66/24
+      nameservers: 
+        addresses:
+          - 8.8.8.8 
+        search: []
+      routes:
+        - to: default
+          via: 192.168.222.1
+    ens36:
+      match:
+        macaddress: "00:0c:29:ec:e6:33"
+        
